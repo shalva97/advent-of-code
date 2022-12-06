@@ -4,6 +4,24 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [shalva97][github]
 
 In this repository, shalva97 is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
 
+# Day 1
+```kotlin
+    // part 1
+    input.fold(mutableListOf(mutableListOf<Int>())) { acc, item ->
+        if (item.isNotEmpty()) acc.last().add(item.toInt())
+        else acc.add(mutableListOf())
+        acc
+    }.maxOfOrNull { it.sum() }.println()
+
+    // part 2
+    input.fold(mutableListOf(mutableListOf<Int>())) { acc, item ->
+        if (item.isNotEmpty()) acc.last().add(item.toInt())
+        else acc.add(mutableListOf())
+        acc
+    }.map { it.sum() }.sortedDescending().take(3).sum().println()
+```
+
+
 If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
 
 - [Kotlin docs][docs]
