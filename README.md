@@ -4,6 +4,8 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [shalva97][github]
 
 In this repository, shalva97 is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
 
+Leaderboard: 2716400-8dd8cad2
+
 # Day 1
 ```kotlin
 // part 1
